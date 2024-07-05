@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+  <!-- The block around the buttons at the top -->
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/add_button"
+        android:src="@drawable/add_waypoint_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/delete_button"
+        android:src="@drawable/del_waypoint_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/delete_visible_button"
+        android:src="@drawable/del_visible_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/delete_all_button"
+        android:src="@drawable/del_all_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/set_destination_button"
+        android:src="@drawable/set_destination_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/add_landmark_button"
+        android:src="@drawable/add_landmark_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/del_landmark_button"
+        android:src="@drawable/del_landmark_16"
+        android:gravity="center">
+    </ImageButton>
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/cut_route_button"
+        android:src="@drawable/cut_route_16"
+        android:gravity="center">
+    </ImageButton>
+  </LinearLayout>
+  <!-- The block around the buttons at the top -->
+
+  <TextView
+    android:layout_height="1dp"
+    android:layout_width="fill_parent"
+    android:id="@+id/shim_over_big_map">
+  </TextView>
+
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/big_summary"
+    android:typeface="monospace"
+    android:textSize="16sp"
+    android:textColor="@android:color/white"
+    android:text="######### ## ###m ##### #####"
+    android:layout_gravity="center">
+  </TextView>
+
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/big_grid_ref"
+    android:typeface="monospace"
+    android:textSize="16sp"
+    android:textColor="@android:color/white"
+    android:text="####"
+    android:gravity="left">
+  </TextView>
+
+  <TextView
+    android:layout_height="1dp"
+    android:layout_width="fill_parent"
+    android:id="@+id/shim_over_big_map2">
+  </TextView>
+
+  <uk.org.rc0.logmygsm.WaypointEditMap
+    android:id="@+id/big_map"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    />
+
+</LinearLayout>
+<!-- The outermost vertical layout -->
+
+
